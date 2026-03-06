@@ -5,7 +5,9 @@ using namespace std;
 class X{
 	
 	public:
+		
 		int a,b,c;
+		
 };
 
 class Y : public X{
@@ -14,9 +16,15 @@ class Y : public X{
 		
 		void setData(){
 			
-			cout << "Enter three numbers :- ";
-			cin >> a >> b >> c;
-		
+			cout << "Enter A numbers :- ";
+			cin >> a;
+			
+			cout << "Enter B numbers :- ";
+			cin >> b;
+			
+			cout << "Enter C numbers :- ";
+			cin >> c;
+			
 		}
 		
 		void getData(){
@@ -24,8 +32,9 @@ class Y : public X{
 			int sum;
 			sum = (a*a*a) + (b*b*b) + (c*c*c);
 			
-			cout << "Sum of cubes :- " << sum;
-				
+			cout << "=====================" << endl;
+			cout << "Sum of cubes :- " << sum << endl;
+			cout << "=====================" << endl;
 		}
 };
 
@@ -35,6 +44,6 @@ int main(){
 	
 	cubes.setData();
 	cubes.getData();
-	
-	return 0;
+
+	return 0;	
 }
