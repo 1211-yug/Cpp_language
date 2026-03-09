@@ -29,11 +29,11 @@ class Y : public X{
 		
 		void getData(){
 			
-			int sum;
-			sum = (a*a*a) + (b*b*b) + (c*c*c);
+			int cube;
+			cube = (a*a*a) + (b*b*b) + (c*c*c);
 			
 			cout << "=====================" << endl;
-			cout << "Sum of cubes :- " << sum << endl;
+			cout << "Sum of cubes :- " << cube << endl;
 			cout << "=====================" << endl;
 		}
 };
@@ -47,3 +47,4 @@ int main(){
 
 	return 0;	
 }
+
